@@ -9,7 +9,7 @@ const { ElevenLabsClient } = require("elevenlabs");
 // Environment variables
 const FRIEND_ID = process.env.FRIEND_ID;
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_KEY = process.env.OPENAI_KEY;
 const IMAGE_PATH = process.env.IMAGE_PATH || './images/sample.png';
 
 // Discord client setup
