@@ -61,6 +61,7 @@ const createAudioFileFromText = async (text, retries = 3, initialDelay = 1000) =
             } catch (error) {
                 currentTry++;
                 console.log(`Attempt ${currentTry} failed. Status code: ${error.statusCode}`);
+                console.log(error)
 
                 if (error.statusCode === 429) {
                     if (currentTry < retries) {
